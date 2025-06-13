@@ -1,0 +1,62 @@
+$primaryBackground: #1c531d;
+$ButtonFill: #238ab6;
+$FontFamily: "Open Sans";
+$cardRegularBackground: #fefefe;
+
+body {
+  background-color: $primaryBackground;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+
+  > #cards {
+    height: 40%;
+    margin: 1rem auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    > div {
+      border-radius: 0.5rem;
+      width: 30%;
+      height: 90%;
+    }
+  }
+
+  > #header {
+    color: $cardRegularBackground;
+    font-family: $FontFamily;
+    margin: 1rem auto;
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    > div {
+      > h2 {
+        font-weight: bold;
+      }
+      > p {
+        font-size: small;
+      }
+    }
+    > h3 {
+      margin: auto auto;
+    }
+  }
+}
+
+.cardBackground {
+  background: url("../Background.png");
+  background-size: 100% 100%;
+}
+
+.cardFlipped {
+  background-color: $cardRegularBackground;
+  background-size: auto;
+}
+
